@@ -1,10 +1,7 @@
 package com.apirest.api_rest.model.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -14,6 +11,7 @@ import java.util.Date;
 @NoArgsConstructor
 @ToString
 @Entity
+@Builder
 @Table(name = "cliente")
 public class Cliente implements Serializable {
 
